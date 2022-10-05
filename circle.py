@@ -24,8 +24,8 @@ y = np.array(Y)
 
 
 # Train a SVM
-linearModel = SVC(kernel='poly')
-linearModel.fit(X,y)
+model = SVC(kernel='poly')
+model.fit(X,y)
 
-plot_decision_regions(X, y, clf=linearModel, legend=2)
+plot_decision_regions(X, y, clf=model, legend=2)
 plt.show()
